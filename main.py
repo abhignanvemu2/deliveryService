@@ -17,4 +17,8 @@ def on_shutdown():
     engine.dispose()
     print("🛑 Database connection closed")
 
+app.get('/')
+def getApi():
+    return "Hi you are welcome"
+
 app.include_router(ApiRouter)
